@@ -10,13 +10,16 @@
 
 ## ✨ Key Features
 
+- **📄 CR80 Standard Multi-Page PDF Export**: Export all badges into a single, combined multi-page PDF document in standard CR80 format (85.60 × 53.98 mm / ISO/IEC 7810 ID-1), ready for bulk and professional card printing.
+- **🔄 Double-Sided (Duplex) Printing Support**: Select a badge Back template to automatically interleave it between each badge front (`Front 1`, `Back`, `Front 2`, `Back`...) in the multi-page PDF for direct duplex printing.
 - **📊 CSV Data Import**: Import attendee datasets with support for custom headers, quotes, and commas.
 - **🔤 Dynamic Text Layer Mapping**: Map CSV columns directly to text layers (e.g. Name, Role, Company, ID).
 - **👁️ Visibility Control (Boolean Mapping)**: Toggle layer visibilities (e.g. `ALL ACCESS`, `VIP`, `STAFF`, `SPEAKER` badges) based on CSV flags (`true`/`false`, `1`/`0`, `yes`/`no`).
 - **🔄 Component Variant Switching**: Dynamically switch instance variants per attendee (e.g. category colors, access level badges, or icons).
-- **📦 Instant ZIP File Export**: Render and compress hundreds of badges into a downloadable `.zip` archive (PNG, PDF, SVG at 1x, 2x, or 3x resolutions) without cluttering or lagging your Figma canvas.
-- **🖼️ Figma Canvas Grid Mode**: Option to generate cloned badge frames directly on your Figma page layout.
-- **🔍 Single-Badge Test Preview**: Generate a single test badge from the first CSV record to verify typography, layer visibilities, and alignment before running batch generation.
+- **📦 Instant ZIP File Export**: Render and compress badges into a downloadable `.zip` archive (PNG, PDF, SVG at 1x, 2x, or 3x resolutions).
+- **🖼️ Figma Canvas Grid Mode**: Option to generate cloned badge frames (front & back) directly on your Figma page layout.
+- **🏷️ Export 1 Specimen Badge (No CSV Required)**: Export a single specimen sample badge directly in your chosen output mode (CR80 PDF, ZIP archive, or Canvas) without needing to upload a CSV dataset.
+- **🔍 Canvas Preview**: Instantly generate a single test preview badge on the Figma canvas to quickly check typography, layer visibilities, and alignment.
 - **🔠 Auto Font Loading**: Pre-loads required font styles before processing to eliminate missing font errors.
 
 ---
@@ -47,15 +50,17 @@ npm run build
 
 ## 🚀 How to Use
 
-1. **Design your Badge**: Create your badge template frame or component in Figma.
-2. **Open PolyAcred**: Launch the plugin via **Plugins** → **Development** → **PolyAcred** and select your badge frame on the canvas.
-3. **Upload Staff CSV**: Upload your staff list CSV file containing headers (e.g. `Name`, `Role`, `VIP`, `Variant`).
-4. **Select Output Mode**:
-   - **Export to ZIP File**: Exports individual badge files directly into a downloadable `.zip` archive (recommended for large events).
-   - **Create on Figma Canvas**: Places cloned badge frames in a grid on your current Figma page.
-5. **Map Columns**: Map each CSV column to its target layer and mapping type (*Text Content*, *Visibility*, or *Component Variant*).
-6. **Test Preview**: Click `🔍 Test Preview (1 Badge)` to verify badge layout and text wrapping.
-7. **Generate Badges**: Click `Generate All Badges` to process your entire dataset.
+1. **Design your Badge**: Create your front badge template frame or component in Figma (and optionally a back template frame).
+2. **Open PolyAcred**: Launch the plugin via **Plugins** → **Development** → **PolyAcred**.
+3. **Select Templates**:
+   - Select your front badge frame on canvas and assign it as **Front Template**.
+   - (Optional) Check **Include Back of Badge**, select your back frame on canvas, and assign it as **Back Template**.
+4. **Quick Specimen Export (Optional CSV)**:
+   - To export a sample badge immediately (without uploading any CSV), choose your output mode and click `🏷️ Export 1 Specimen` (or `🔍 Canvas Preview`).
+5. **Bulk Batch Generation**:
+   - Upload your staff list CSV file containing headers (e.g. `Name`, `Role`, `VIP`, `Variant`).
+   - Map CSV columns to target layers.
+   - Click `Export Multi-Page PDF` (or `Export Badges ZIP` / `Generate on Canvas`) to batch generate all badges.
 
 ---
 

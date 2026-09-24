@@ -16,11 +16,9 @@
 - **🔤 Dynamic Text Layer Mapping**: Map CSV columns directly to text layers (e.g. Name, Role, Company, ID).
 - **👁️ Visibility Control (Boolean Mapping)**: Toggle layer visibilities (e.g. `ALL ACCESS`, `VIP`, `STAFF`, `SPEAKER` badges) based on CSV flags (`true`/`false`, `1`/`0`, `yes`/`no`).
 - **🔄 Component Variant Switching**: Dynamically switch instance variants per attendee (e.g. category colors, access level badges, or icons).
-- **📦 Instant ZIP File Export**: Render and compress badges into a downloadable `.zip` archive (PNG, PDF, SVG at 1x, 2x, or 3x resolutions).
 - **🖼️ Figma Canvas Grid Mode**: Option to generate cloned badge frames (front & back) directly on your Figma page layout.
 - **🏷️ Export 1 Specimen Badge (No CSV Required)**: Export a single specimen sample badge directly in your chosen output mode (CR80 PDF, ZIP archive, or Canvas) without needing to upload a CSV dataset.
 - **🔍 Canvas Preview**: Instantly generate a single test preview badge on the Figma canvas to quickly check typography, layer visibilities, and alignment.
-- **🔠 Auto Font Loading**: Pre-loads required font styles before processing to eliminate missing font errors.
 
 ---
 
@@ -31,7 +29,7 @@ Follow these steps to run PolyAcred locally in Figma from this repository:
 ### 1. Clone & Build
 ```bash
 # Clone repository
-git clone https://github.com/your-username/polyacred.git
+git clone https://github.com/AdrienB2/polyacred
 cd polyacred
 
 # Install dependencies and build code.js
